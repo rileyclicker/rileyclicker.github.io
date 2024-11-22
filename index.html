@@ -3,6 +3,12 @@
 
     <head>
         <style>
+            h4{
+                color: aquamarine;
+                text-align: center;
+                font-size: 50;
+                top: 60px;
+            }
         .t1 {
             top: 60px
         }
@@ -78,13 +84,26 @@
        
             
         function buyUpgrade4(){
-            if (timesclicked>= 1000000000) {
-                timesclicked = timesclicked - 1000000000
+            if (timesClicked>= 1000000000) {
+                timesClicked = timesClicked - 1000000000
                 interval = interval + 1500000
                 text.innerText = timesClicked
             }
         }
-
+        function buyUpgrade5() {
+            if (timesClicked>= 1000000000000) {
+                timesClicked = timesClicked - 1000000000000
+                interval = interval + 600000000
+                text.innerText = timesClicked
+            }
+        }
+        function buyUpgrade6() {
+            if (timesClicked>= 1000000000000000000) {
+                timesClicked = timesClicked - 1000000000000000000
+                interval = interval + 6000000000000000
+                text.innerText = timesClicked
+            }
+        }
 
 
 
@@ -105,13 +124,18 @@
             Click the Riley button to gain more Rileys
         </h3>
         
-        <center><input type="button" value="Tier 2 - 10000$"
+        <center><input type="button" value="Tier 2 - 10.000$"
                 onClick="buyUpgrade2()" class="t2"></center>
-        <center><input type="button" value="Tier 3 - 10000000$"
+        <center><input type="button" value="Tier 3 - 1.000.000$"
                 onClick="buyUpgrade3()" class="t3"></center>
-        <center><input type="button" value="Tier 4 - 100000000$"
+        <center><input type="button" value="Tier 4 - 1.000.000.000$"
                 onClick="buyUpgrade4()" class="t4"></center>
-
+                <center><input type= "button" value = "Tier 5 Upgrade- 1.000.000.000.000$" onClick="buyUpgrade5()" class = "t5"></center>
+                <center><input type= "button" value = "Tier 6 Upgrade- 1.000.000.000.000.000.000$" onClick="buyUpgrade6()" class = "t6"></center>
+<h4> 
+    Riley Clicker has moved to a new domain! rileyclicker.github.io - Riley F, C.E.O and founder of Riley Clicker
+</h4>
     </body>
+
 
 </html>
